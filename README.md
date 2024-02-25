@@ -22,7 +22,8 @@ The project is composed of various JavaScript and CSS files to provide encryptio
 
 ## Demo
 
-https://github.com/Daiene/RoboCrypt/assets/24512471/6118fb5d-e483-4589-b8e4-2b502ea75320
+https://github.com/Daiene/RoboCrypt/assets/24512471/12668d80-6bd0-4733-8a8f-e12a4cde2c82
+
 
 ## Setup and Usage
 
