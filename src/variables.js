@@ -7,5 +7,6 @@ export const app = {
         clearButton: 'clearTextarea'
     },
     roboImage: 'roboImage',
-    title: 'h1 span'
+    title: 'h1 span',
+    textError: 'error'
 };
