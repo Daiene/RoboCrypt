@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="./img/encryptedText.png">
+  <title>Cryptography</title>
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="./img/RoboCrypt.svg" alt="logo">
+    <button name="principalButton" class="principalButton">New text</button>
+  </header>
+
+  <main>
+    <div id="container">
+      <textarea id="textarea" name="textarea" placeholder="Enter your text here..."></textarea>
+      <div id="container-information">
+        <h1>
+          <span>R</span>
+          <span>O</span>
+          <span>B</span>
+          <span>O</span>
+          <span>C</span>
+          <span>R</span>
+          <span>Y</span>
+          <span>P</span>
+          <span>T</span>
+        </h1>
+        <div id="copy-container">
+          <div id="roboImage"></div>
+          <button name="principalButton" class="principalButton none" id="copy">Copy</button>
+        </div>
+      </div>
+    </div>
+    <div id="information-type-letter">
+      <p>
+        <img src="./img/warning.svg" alt="warning icon">
+        Only lowercase letters and no accents.
+      </p>
+    </div>
+    <div id="action-buttons">
+      <button name="principalButton" class="principalButton" id="encrypt">Encrypt</button>
+      <button name="principalButton" class="principalButton" id="decrypt">Decrypt</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Daiene Batagioti</p>
+  </footer>
+</body>
+
+</html>
