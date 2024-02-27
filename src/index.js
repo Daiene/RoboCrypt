@@ -17,6 +17,10 @@ const selectors = {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
+    selectors.textarea.addEventListener("click", function() {
+      selectors.textarea.removeAttribute("readonly");
+    });
+    
     startAnimation(selectors.titleElements);
 
     selectors.textarea.addEventListener("input", function () {
