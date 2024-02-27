@@ -17,7 +17,7 @@ const selectors = {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-    selectors.textarea.addEventListener('touchstart', function(event) {
+    selectors.textarea.addEventListener('click', function(event) {
         selectors.textarea.focus();
     })
     
