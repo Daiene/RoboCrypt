@@ -17,10 +17,6 @@ const selectors = {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-    selectors.textarea.addEventListener('click', function(event) {
-        selectors.textarea.focus();
-    })
-    
     startAnimation(selectors.titleElements);
 
     selectors.textarea.addEventListener("input", function () {
