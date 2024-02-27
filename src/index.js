@@ -17,6 +17,10 @@ const selectors = {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
+    selectors.textarea.addEventListener('touchstart', function(event) {
+        selectors.textarea.focus();
+    })
+    
     startAnimation(selectors.titleElements);
 
     selectors.textarea.addEventListener("input", function () {
