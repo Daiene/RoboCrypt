@@ -97,6 +97,7 @@ footer {
     border-right: 1px solid #AAB2D5;
     color: #FFFFFF;
     font-size: 22px;
+    z-index: 20;
 }
 
 #textarea:focus {
