@@ -17,20 +17,18 @@ const selectors = {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("invisibleButton").click();
-    
-    selectors.textarea.addEventListener("click", function() {
-      selectors.textarea.removeAttribute("readonly");
-    });
+    document.getElementById("textarea-container").addEventListener("click", function() {
+        selectors.textarea.focus();
+
+        selectors.textarea.addEventListener("input", function () {
+            changeImg(selectors.roboImage, "url('./img/robo-typing.png')");
+            startAnimation(selectors.titleElements);
+            selectors.roboImage.style.backgroundPosition = 'center';
+            selectors.copyButton.classList.remove('none');
+        });
+    })
     
     startAnimation(selectors.titleElements);
-
-    selectors.textarea.addEventListener("input", function () {
-        changeImg(selectors.roboImage, "url('./img/robo-typing.png')");
-        startAnimation(selectors.titleElements);
-        selectors.roboImage.style.backgroundPosition = 'center';
-        selectors.copyButton.classList.remove('none');
-    });
 
     selectors.encryptButton.addEventListener("click", function () {
         if (selectors.textarea.value.trim() === '') {
