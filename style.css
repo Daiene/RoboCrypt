@@ -1,306 +1,307 @@
 @keyframes mymove {
-  0% {
-    margin-top: 90px;
-    transform: scale(1.4);
-  }
+    0% {
+        margin-top: 90px;
+        transform: scale(1.4);
+    }
 
-  78% {
-    margin-top: 90px;
-    transform: scale(1.3);
-  }
+    78% {
+        margin-top: 90px;
+        transform: scale(1.3);
+    }
 
-  100% {
-    margin-top: 30px;
-    transform: scale(1);
-  }
+    100% {
+        margin-top: 30px;
+        transform: scale(1);
+    }
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body,
 html {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  color: #E3E2E3;
-  padding: 2% 15%;
-  font-family: 'Jeju Myeongjo', serif;
-  font-weight: 200;
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  height: 100vh;
-  position: relative;
-  background: linear-gradient(#1A4C71, rgba(74, 129, 161, 0.79));
+    color: #E3E2E3;
+    padding: 2% 15%;
+    font-family: 'Jeju Myeongjo', serif;
+    font-weight: 200;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(#1A4C71, rgba(74, 129, 161, 0.79));
 }
 
 body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('./img/hello.png') no-repeat left bottom;
-  background-size: auto;
-  z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./img/hello.png') no-repeat left bottom;
+    background-size: auto;
+    z-index: 0;
+    background-size: 16%;
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 footer {
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 header,
 footer {
-  flex: 0 0 auto;
+    flex: 0 0 auto;
 }
 
 #container {
-  background: rgba(255, 255, 255, 10%);
-  border: 1px solid #AAB2D5;
-  backdrop-filter: blur(20px);
-  border-radius: 15px;
-  display: flex;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-  flex: 1;
+    background: rgba(255, 255, 255, 10%);
+    border: 1px solid #AAB2D5;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    flex: 1;
 }
 
 #textarea {
-  height: auto;
-  width: 50%;
-  resize: none;
-  border: none;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  padding: 1.2%;
-  background-color: transparent;
-  border-right: 1px solid #AAB2D5;
-  color: #FFFFFF;
-  font-size: 22px;
+    height: auto;
+    width: 50%;
+    resize: none;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 1.2%;
+    background-color: transparent;
+    border-right: 1px solid #AAB2D5;
+    color: #FFFFFF;
+    font-size: 22px;
 }
 
 #textarea:focus {
-  box-shadow: 0 0 0 0;
-  outline: 0;
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }
 
 #textarea::placeholder {
-  color: #AAB2D5;
+    color: #AAB2D5;
 }
 
 #container-information {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0 40px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 40px;
 }
 
 h1 {
-  margin: 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  font-family: "Alfa Slab One", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #FFFFFF;
-  height: 30%;
-  font-size: 3em;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    height: 30%;
+    font-size: 3em;
 }
 
 h1 span {
-  animation: wave 0.5s;
-  display: inline-block;
+    animation: wave 0.5s;
+    display: inline-block;
 }
 
 @keyframes wave {
-  0% {
-    transform: scale(1);
-  }
+    0% {
+        transform: scale(1);
+    }
 
-  50% {
-    transform: scale(1.4);
-  }
+    50% {
+        transform: scale(1.4);
+    }
 
-  100% {
-    transform: scale(1);
-  }
+    100% {
+        transform: scale(1);
+    }
 }
 
 #robo-principal {
-  width: 80%;
-  margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #information-type-letter,
 #action-buttons {
-  height: fit-content;
-  flex: 0 0 auto;
+    height: fit-content;
+    flex: 0 0 auto;
 }
 
 #action-buttons {
-  display: flex;
-  align-items: center;
-  color: #E3E2E3;
-  gap: 1.5em;
+    display: flex;
+    align-items: center;
+    color: #E3E2E3;
+    gap: 1.5em;
 }
 
 #copy-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 0 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
 }
 
 #roboImage {
-  background-image: url('./img/roboPrincipal.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  background-position: bottom;
+    background-image: url('./img/roboPrincipal.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: bottom;
 }
 
 .principalButton {
-  width: auto;
-  border-radius: 30px;
-  border: 0px;
-  padding: 0.6em 3em;
-  font-size: 1rem;
-  font-weight: bold;
-  background: #356EA9;
-  color: rgb(255, 255, 255);
-  position: relative;
-  cursor: pointer;
-  transition: all 0.2s ease 0s;
+    width: auto;
+    border-radius: 30px;
+    border: 0px;
+    padding: 0.6em 3em;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #356EA9;
+    color: rgb(255, 255, 255);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
 }
 
 .principalButton::after {
-  content: "";
-  position: absolute;
-  left: calc(-0.3rem - 1px);
-  top: calc(-0.3rem - 1px);
-  width: calc(100% + 0.6rem);
-  height: calc(100% + 0.6rem);
-  border: 1px solid #356EA9;
-  border-radius: 1.5rem;
+    content: "";
+    position: absolute;
+    left: calc(-0.3rem - 1px);
+    top: calc(-0.3rem - 1px);
+    width: calc(100% + 0.6rem);
+    height: calc(100% + 0.6rem);
+    border: 1px solid #356EA9;
+    border-radius: 1.5rem;
 }
 
 .principalButton:hover:enabled {
-  background-color: #356EA9;
-  box-shadow: #356EA9 0px 0px 48px 0px;
+    background-color: #356EA9;
+    box-shadow: #356EA9 0px 0px 48px 0px;
 }
 
 #copy {
-  margin-bottom: 25px;
-  width: 100%;
+    margin-bottom: 25px;
+    width: 100%;
 }
 
 #error {
-  text-align: center;
+    text-align: center;
 }
 
 #hello-robo {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .none {
-  display: none !important;
+    display: none !important;
 }
 
 @media (max-width: 540px) {
-  body,
-  #action-buttons {
-    font-size: 12px;
-    gap: 20px;
-  }
-  body::before {
-    background-size: 30%;
-  }
-  h1 {
-    font-size: 1.5em;
-  }
-  header,
-  #action-buttons {
-    flex-direction: column;
-  }
-  header {
-    align-items: start;
-    gap: 1.5em;
-  }
-  .principalButton {
-    width: 100%;
-    font-size: 0.8rem;
-  }
-  #copy-container {
-    padding: 0 !important;
-  }
-  #copy,
-  #roboImage {
-    width: auto;
-  }
+    body,
+    #action-buttons {
+        font-size: 12px;
+        gap: 20px;
+    }
+    body::before {
+        background-size: 30%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    header,
+    #action-buttons {
+        flex-direction: column;
+    }
+    header {
+        align-items: start;
+        gap: 1.5em;
+    }
+    .principalButton {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    #copy-container {
+        padding: 0 !important;
+    }
+    #copy,
+    #roboImage {
+        width: auto;
+    }
 }
 
 @media (min-width: 540px) and (max-width: 1140px) {
-  body::before {
-    background-size: 20%;
-  }
-  body,
-  #action-buttons {
-    font-size: 12px;
-  }
-  .principalButton {
-    font-size: 0.8rem;
-  }
+    body::before {
+        background-size: 20%;
+    }
+    body,
+    #action-buttons {
+        font-size: 12px;
+    }
+    .principalButton {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 1140px) {
-  body::before {
-    background-size: 16%;
-  }
-  #container {
-    flex-direction: column;
-  }
-  #textarea {
-    height: 100%;
-    width: 100%;
-    border-bottom-left-radius: 0;
-    border-right: none;
-    border-bottom: 1px solid #AAB2D5;
-    padding: 4%;
-    font-size: 14px;
-  }
-  #container-information {
-    width: 100%;
-    height: 100%;
-  }
+    body::before {
+        background-size: 28%;
+    }
+    #container {
+        flex-direction: column;
+    }
+    #textarea {
+        height: 100%;
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-right: none;
+        border-bottom: 1px solid #AAB2D5;
+        padding: 4%;
+        font-size: 14px;
+    }
+    #container-information {
+        width: 100%;
+        height: 100%;
+    }
 }
