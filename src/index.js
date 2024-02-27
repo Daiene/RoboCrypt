@@ -17,6 +17,8 @@ const selectors = {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("invisibleButton").click();
+    
     selectors.textarea.addEventListener("click", function() {
       selectors.textarea.removeAttribute("readonly");
     });
